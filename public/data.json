@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Who developed JavaScript, and what was the first name of JavaScript?",
+    "image": "https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2019/12/23174648/B-Tech-Degree.jpg",
+    "author": "Rana Arju",
+    "author_photo": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg",
+    "read_time": 8,
+    "publish": "Feb 18"
+  },
+  {
+    "id": 2,
+    "title": "Enumerate the differences between Java and JavaScript?",
+    "image": "https://miro.medium.com/v2/resize:fit:1400/1*BPSx-c--z6r7tY29L19ukQ.png",
+    "author": "Shariot",
+    "author_photo": "https://as2.ftcdn.net/v2/jpg/02/97/24/51/1000_F_297245133_gBPfK0h10UM3y7vfoEiBC3ZXt559KZar.jpg",
+    "read_time": 5,
+    "publish": "Mar 20"
+  },
+  {
+    "id": 3,
+    "title": "What is the use of isNaN function?",
+    "image": "https://mindphp.com/images/2022/06/Javascript.png",
+    "author": "Auporna Barua",
+    "author_photo": "https://thumbs.dreamstime.com/b/handsome-man-black-suit-white-shirt-posing-studio-attractive-guy-fashion-hairstyle-confident-man-short-beard-125019349.jpg",
+    "read_time": 4,
+    "publish": "Dec 26"
+  },
+  {
+    "id": 4,
+    "title": "Is it possible to break JavaScript Code into several lines?",
+    "image": "https://pbs.twimg.com/media/FPpQAIKVsAkt3pX.jpg",
+    "author": "John Deo",
+    "author_photo": "https://t3.ftcdn.net/jpg/02/00/90/24/360_F_200902415_G4eZ9Ok3Ypd4SZZKjc8nqJyFVp1eOD6V.jpg",
+    "read_time": 10,
+    "publish": "Jun 02"
+  }
+]
