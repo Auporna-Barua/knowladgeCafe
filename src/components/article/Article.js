@@ -2,21 +2,23 @@ import React, { useEffect } from "react";
 import { BsBookmark } from "react-icons/bs";
 import { toast } from "react-toastify";
 const Article = ({ blog, setBookMarks, bookmarks, setMarkRead, markRead }) => {
-  const handleBookMark = (blog) => {
-    const check = bookmarks.some((item) => item.id === blog.id);
-    console.log(check);
-    if (check) {
-      return toast.error("This blog already bookmarked.");
-    } else {
-      setBookMarks([...bookmarks, blog]);
-    }
-  };
+   const handleBookMark = (blog) => {
+     const check = bookmarks.some((item) => item.id === blog.id);
+     console.log(check);
+     if (check) {
+       return toast.error("This blog already bookmarked.");
+     } else {
+       setBookMarks([...bookmarks, blog]);
+       localStorage.setItem("bookmark", JSON.stringify([...bookmarks, blog]));
+       return toast.success("This blog add on bookmarked.");
+     }
+   };
 
-  const handleReadTime = (time) => {
-    const readTime = (markRead += time);
-    setMarkRead(readTime);
-    localStorage.setItem("readTime", readTime);
-  };
+   const handleReadTime = (time) => {
+     const readTime = (markRead += time);
+     setMarkRead(readTime);
+     localStorage.setItem("readTime", readTime);
+   };
   return (
     <div className="card">
       <img src={blog.image} className="card-img-top cover" alt="..." />

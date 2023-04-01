@@ -8,8 +8,12 @@ import Blog from "./components/blog/Blog";
 
 function App() {
   const [blogs, setBlogs] = useState([]);
-  const [bookmarks, setBookMarks] = useState([]);
-  const [markRead, setMarkRead] = useState(0);
+    const [bookmarks, setBookMarks] = useState(
+      JSON.parse(localStorage.getItem("bookmark")) || []
+    );
+    const [markRead, setMarkRead] = useState(
+      JSON.parse(localStorage.getItem("readTime")) || 0
+    );
   useEffect(() => {
     const data = JSON.parse(localStorage.getItem("bookmark"));
     if (data) {
