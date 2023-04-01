@@ -39,7 +39,19 @@ function App() {
               />
             ))}
         </div>
-        <div className="right-side"></div>
+        <div className="right-side">
+          <div className="spent">Spent time on read : {markRead} </div>
+          <div className="bookmarks">
+            <span>Bookmarked Blogs : {bookmarks?.length}</span>
+            {bookmarks &&
+              bookmarks.map((bookmark) => (
+                <div className="bookmark" key={bookmark.id}>
+                  <p>{bookmark.title}</p>
+                </div>
+              ))}
+          </div>
+        
+        </div>
       </div>
       <div className="blogs">
         <h2 className="text-center">All Question & Answer</h2>
